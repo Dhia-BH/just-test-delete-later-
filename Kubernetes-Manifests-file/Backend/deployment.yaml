@@ -24,7 +24,6 @@ spec:
       containers:
       - name: api
         image: backend:latest
-        imagePullPolicy: Always
         env:
           - name: MONGO_CONN_STR
             value: mongodb://mongodb-svc:27017/todo?directConnection=true
